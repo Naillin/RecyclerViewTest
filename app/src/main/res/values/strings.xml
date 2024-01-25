@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RecyclerViewTest</string>
+
+    <string name="button_add_item">Добавить</string>
+    <string name="button_next">Следующий</string>
+    <string name="button_done">Готово</string>
+
+    <string name="textview_hint_input_title">Введите название</string>
+    <string name="textview_hint_input_desc">Введите описание</string>
+
+    <string name="textview_input_error">Поле должно быть заполнено</string>
+</resources>
