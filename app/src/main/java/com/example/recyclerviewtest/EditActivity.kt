@@ -3,6 +3,7 @@ package com.example.recyclerviewtest
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.example.recyclerviewtest.databinding.ActivityEditBinding
 import com.google.android.material.textfield.TextInputEditText
@@ -28,7 +29,7 @@ class EditActivity : AppCompatActivity() {
     }
 
     fun buttonNextClick(view: View) {
-        indexImage = if(indexImage > imageIdList.size - 1) 0 else indexImage++
+        indexImage = if(indexImage > imageIdList.size - 2) 0 else ++indexImage
         bindingEditActivity.apply {
             imageId = imageIdList[indexImage]
             imageViewEdit.setImageResource(imageId)

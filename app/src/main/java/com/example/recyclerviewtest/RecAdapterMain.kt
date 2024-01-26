@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewtest.databinding.ItemSampleRecviewBinding
 
-class RecAdapterMain : RecyclerView.Adapter<RecAdapterMain.ItemHolder>() {
+class RecAdapterMain() : RecyclerView.Adapter<RecAdapterMain.ItemHolder>() {
     var itemsList = ArrayList<DataItem>()
 
     class ItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

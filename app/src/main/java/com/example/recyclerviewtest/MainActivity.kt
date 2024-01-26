@@ -29,8 +29,6 @@ class MainActivity : AppCompatActivity() {
                 adapter.addItem(it.data?.getSerializableExtra(Constance.CODE_EDIT_LAUNCHER) as DataItem) //Попоробовать вместо Serializable -> Paracable
             }
         }
-
-        Log.d("MyTag", "pizdec2")
     }
 
     private fun init() {
@@ -40,9 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun buttonAddItemClick(view: View) { //вылетает даже не попав в действие
-        Log.d("MyTag", "pizdec")
+    fun buttonAddItemClick(view: View) {
         editLauncher?.launch(Intent(this@MainActivity, EditActivity::class.java))
-        Log.d("MyTag", "pizdec1")
     }
 }
